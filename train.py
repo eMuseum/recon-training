@@ -25,7 +25,8 @@ net.caffenet.set_mode_cpu()
 
 # Paths to the images folders, it should be improved
 # TODO Dynamically fetch from database
-images_path=['/data/pis_12/Guernica/',
+images_path=['/data/pis_12/random/',
+             '/data/pis_12/Guernica/',
              '/data/pis_12/abside de San Clemente de Tahull/',
              '/data/pis_12/Bedroom in Arles/',
              '/data/pis_12/ca,talan landscape/',
@@ -45,11 +46,11 @@ images_path=['/data/pis_12/Guernica/',
 
 # Create a tuple for classes (y) and one for feats
 y = []
-label_class=1;
+label_class=-1;
 feat_vector = []
 
 # Neuralnet layer from which we get features (up to fc8)
-layer = 'fc6'
+layer = 'fc7'
 
 # Foreach image, get feats
 for c in images_path:
